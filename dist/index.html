@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessible Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="form-title">Personal Information Form</h1>
+    <div class="form-container">
+      <form id="dynamicForm">
+        <fieldset class="form-fieldset">
+          <label for="1111" class="form-label">First Name</label>
+          <input placeholder="Enter First Name" type="text" id="1111" name="nameFirst" required class="form-input">
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <label for="2222" class="form-label">Last Name</label>
+          <input placeholder="Enter Last Name" type="text" id="2222" name="nameLast" required class="form-input">
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <label for="3333" class="form-label">Your Phone Number</label>
+          <input placeholder="Enter Phone Number" type="tel" id="3333" name="contactPhone" pattern="[0-9]{10}" class="form-input">
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <label for="4444" class="form-label">Your Email</label>
+          <input placeholder="Enter Email Address" type="email" id="4444" name="contactEmail" class="form-input">
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">Your preferred contact</legend>
+          <div class="radio-group">
+            <input type="radio" id="5555-1" name="contactPreferred" value="phone" required class="form-radio">
+            <label for="5555-1" class="form-radio-label">Phone</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="5555-2" name="contactPreferred" value="email" required class="form-radio">
+            <label for="5555-2" class="form-radio-label">Email</label>
+          </div>
+        </fieldset>
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Form submitted successfully!</div>
+
+    <script src="default.js"></script>
+  </body>
+</html>

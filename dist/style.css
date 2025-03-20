@@ -1,0 +1,160 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    padding: 0 10px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .form-radio {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .form-radio-label {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .form-input[aria-invalid="true"] {
+    border-color: #e74c3c;
+  }
+  
+  .form-input[aria-invalid="true"]:focus {
+    border-color: #e74c3c;
+  }
+  
+  @media (max-width: 600px) {
+    .form-title {
+      font-size: 2rem;
+    }
+  
+    .form-container {
+      padding: 15px;
+    }
+  
+    .form-fieldset {
+      padding: 15px;
+    }
+  
+    .form-input {
+      padding: 8px;
+    }
+  
+    .form-button {
+      padding: 10px;
+    }
+  }
+
+  /* Toast Notification Styles */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    bottom: 20px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  
+  .toast.show {
+    visibility: visible;
+    opacity: 1;
+  }
